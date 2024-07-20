@@ -4,6 +4,10 @@
 
 <img src="/public/images/screen.png" />
 
+## Demo Video
+
+Video Link: https://drive.google.com/file/d/1oGTPGsT02RP1j7ZEiAWB6SbzGXOjChfq/view?usp=drive_link
+
 ## Features
 
 Here are some of the current features that PropertEase has:
