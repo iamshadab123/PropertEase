@@ -1,35 +1,35 @@
 # PropertEase
 
-> A web application to help you find your next rental property.
+> A web application designed to help you find your next rental property.
 
-<img src="/public/images/screen.png" />
+<img src="/public/images/screen.png" alt="PropertEase Screenshot" />
 
 ## Demo Video
 
-Video Link: https://drive.google.com/file/d/1oGTPGsT02RP1j7ZEiAWB6SbzGXOjChfq/view?usp=drive_link
+Watch the demo video here: [PropertEase Demo](https://drive.google.com/file/d/1oGTPGsT02RP1j7ZEiAWB6SbzGXOjChfq/view?usp=drive_link)
 
 ## Features
 
-Here are some of the current features that PropertEase has:
+PropertEase includes the following features:
 
-- [x] User authentication with Google & Next Auth
-- [x] User authorization
-- [x] Route protection
-- [x] User profile with user listings
-- [x] Property Listing CRUD
-- [x] Property image upload (Multiple)
-- [x] Property search
-- [x] Internal messages with 'unread' notifications
-- [x] Photoswipe image gallery
-- [x] Mapbox maps
-- [x] Toast notifications
-- [x] Property bookmarking / saved properties
-- [x] Property sharing to social media
-- [x] Loading spinners
-- [x] Responsive design (Tailwind)
-- [x] Custom 404 page
+- [x] **User Authentication**: Sign in with Google & Next Auth
+- [x] **User Authorization**: Control access and permissions
+- [x] **Route Protection**: Secure routes to prevent unauthorized access
+- [x] **User Profile**: View and manage user listings
+- [x] **Property Listing CRUD**: Create, Read, Update, and Delete property listings
+- [x] **Property Image Upload**: Upload multiple images for each property
+- [x] **Property Search**: Search for properties based on various criteria
+- [x] **Internal Messaging**: Communicate with other users and receive 'unread' notifications
+- [x] **Photoswipe Image Gallery**: View property images in a responsive gallery
+- [x] **Mapbox Integration**: Display property locations on interactive maps
+- [x] **Toast Notifications**: Show notifications for various actions
+- [x] **Property Bookmarking**: Save and manage bookmarked properties
+- [x] **Social Media Sharing**: Share property listings on social media platforms
+- [x] **Loading Spinners**: Indicate loading states to users
+- [x] **Responsive Design**: Mobile-friendly design using Tailwind CSS
+- [x] **Custom 404 Page**: User-friendly error page for invalid routes
 
-PropertEase uses the following technologies:
+## Technologies Used
 
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
@@ -51,29 +51,36 @@ PropertEase uses the following technologies:
 
 ### Prerequisites
 
+Ensure you have the following installed:
+
 - Node.js version 18 or higher
-- MongoDB Atlas account and a cluster. Sign up and create a cluster at [MongoDB](https://www.mongodb.com/)
-- Cloudinary account. Sign up at [Cloudinary](https://cloudinary.com/)
-- Google console account. Sign up at [Google Cloud](https://console.cloud.google.com/)
-- Mapbox account. Sign up at [Mapbox](https://www.mapbox.com/)
+- MongoDB Atlas account and a cluster ([Sign up for MongoDB](https://www.mongodb.com/))
+- Cloudinary account ([Sign up for Cloudinary](https://cloudinary.com/))
+- Google Console account ([Sign up for Google Cloud](https://console.cloud.google.com/))
+- Mapbox account ([Sign up for Mapbox](https://www.mapbox.com/))
 
-### `.env` File
+### Configuration
 
-Rename the `env.example` file to `.env` and fill in the following environment variables:
+1. **Rename the `.env.example` file** to `.env`.
+2. **Add environment variables** to the `.env` file:
 
-- Get your MongoDB connection string from your MongoDB Atlas cluster and add it to `MONGODB_URI`.
-- Get your Google client ID and secret from your Google console account and add them to `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`.
-- Add a secret to `NEXTAUTH_SECRET`. You can generate with the following command:
-  ```bash
-  openssl rand -base64 32
-  ```
-- Get your Cloudinary cloud name, API key, and API secret from your Cloudinary account and add them to `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, and `CLOUDINARY_API_SECRET`.
-- Get your Mapbox token from your Mapbox account and add it to `NEXT_PUBLIC_MAPBOX_TOKEN`.
-- Get your Google Geocoding API key from your Google console account and add it to `NEXT_PUBLIC_GOOGLE_GEOCODING_API_KEY`.
+    ```bash
+    MONGODB_URI=<Your MongoDB connection string>
+    GOOGLE_CLIENT_ID=<Your Google Client ID>
+    GOOGLE_CLIENT_SECRET=<Your Google Client Secret>
+    NEXTAUTH_SECRET=<Generate a secret with: openssl rand -base64 32>
+    CLOUDINARY_CLOUD_NAME=<Your Cloudinary Cloud Name>
+    CLOUDINARY_API_KEY=<Your Cloudinary API Key>
+    CLOUDINARY_API_SECRET=<Your Cloudinary API Secret>
+    NEXT_PUBLIC_MAPBOX_TOKEN=<Your Mapbox Token>
+    NEXT_PUBLIC_GOOGLE_GEOCODING_API_KEY=<Your Google Geocoding API Key>
+    ```
 
-### Install Dependencies
+### Installation
+
+Install the required dependencies:
 
 ```bash
 npm install
-```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
