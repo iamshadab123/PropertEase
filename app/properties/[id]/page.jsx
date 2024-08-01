@@ -152,4 +152,19 @@ const PropertyPage = () => {
                 <div className='grid grid-cols-1 md:grid-cols-70/30 w-full gap-6'>
                   <PropertyDetails property={property} />
                   <aside className='space-y-4'>
-                    <BookmarkButton pr
+                    <BookmarkButton property={property} />
+                    <ShareButtons property={property} />
+                    <PropertyContactForm property={property} />
+                  </aside>
+                </div>
+              </div>
+            </section>
+            <PropertyImages images={property.images} />
+          </>
+        )
+      )}
+    </>
+  );
+};
+
+export default PropertyPage;
