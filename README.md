@@ -2,7 +2,7 @@
 
 > A web application designed to help you find your next rental property.
 
-<img src="/screen.png" alt="PropertEase Screenshot" />
+<img src="screen.png" alt="PropertEase Screenshot" />
 
 ## Demo Video
 
