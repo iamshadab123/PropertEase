@@ -43,6 +43,8 @@
 //   }
 // };
 
+export const dynamic = 'force-dynamic';
+
 import connectDB from '@/config/database';
 import Property from '@/models/Property';
 
