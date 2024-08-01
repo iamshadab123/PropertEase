@@ -171,7 +171,7 @@ const Message = ({ message }) => {
 
       <ul className="mb-4 text-gray-600">
         <li>
-          <strong>Name:</strong> {message.sender.username}
+          <strong>Name:</strong> {message.name}
         </li>
         <li>
           <strong>Reply Email:</strong>{' '}
