@@ -1,30 +1,27 @@
 'use client';
 import { createContext, useContext, useState } from 'react';
 
-// Create a context object
+// Create context
 const GlobalContext = createContext();
 
-// Create a provider component
+// Create a provider
 export function GlobalProvider({ children }) {
-  // State to manage unread count
   const [unreadCount, setUnreadCount] = useState(0);
 
   return (
-    // Provide context value to children components
     <GlobalContext.Provider
       value={{
-        unreadCount, // Current unread count
-        setUnreadCount, // Function to update unread count
+        unreadCount,
+        setUnreadCount,
       }}
     >
-      {children} {/* Render children components */}
+      {children}
     </GlobalContext.Provider>
   );
 }
 
-// Custom hook to access the global context
+// Create a custom hook to access context
 export function useGlobalContext() {
-  // Access the context value
   return useContext(GlobalContext);
 }
 
